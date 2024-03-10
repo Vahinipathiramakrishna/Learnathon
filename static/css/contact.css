@@ -1,0 +1,98 @@
+.header
+{
+display: flex;
+ margin-left: 0.1rem;
+ background-color: #c92f00;
+ color: #fff;
+ padding: 10px ;
+ border-radius: 3rem 3rem;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.second{
+    margin-left: 15%;
+    margin-top: 2%;
+    
+}
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  img {
+    width: 1000px;
+    
+}
+.container{
+ border-radius: 2rem 2rem;   
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+}
+.clr{
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.agent-info {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+.agent-info h3 {
+    margin-top: 0;
+  }
+
+.contact-agent {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+  }

@@ -1,0 +1,52 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up page</title>
+    <link rel="stylesheet" href="{% static 'css/register.css'  %}">
+</head> 
+<body>
+    <div class="single">
+        <h1 class="header"> Sign-up</h1>
+        <form method="post" action="{% url 'checkregistration' %}">
+            {% csrf_token %}
+        <table class="table" border="2" style="size:300px">
+            <tr>
+                <td>Enter Name</td>
+                <td><input type="text" name="name" required/></td>
+            </tr>
+              <tr>
+                  <td> Enter Address</td>
+                  <td><input type="text" name="addr" required/></td>
+              </tr>
+               <tr>
+                  <td> Enter Email</td>
+                  <td><input type="text" name="email" required/></td>
+              </tr>
+              <tr>
+                  <td> Enter Phone No</td>
+                  <td><input type="text" name="phno" required/></td>
+              </tr>
+               <tr>
+                  <td> Username</td>
+                  <td><input type="text" name="uname" required/></td>
+              </tr>
+               <tr>
+                  <td> Password</td>
+                  <td><input type="password" name="pwd" required/></td>
+              </tr>
+               <tr>
+                  <td> Confirm Password</td>
+                  <td><input type="password" name="cpwd" required/></td>
+              </tr>
+              <tr>
+                  <td align="center" > <button type="submit" aria-required="true">Sign Up</button></td>
+                  <td align="center" > <button type="submit">Clear</button></td>
+              </tr>
+              </table>
+
+    </div>
+    
+</body>
+</html>

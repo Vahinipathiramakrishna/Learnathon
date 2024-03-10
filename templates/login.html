@@ -1,0 +1,90 @@
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 400px;
+      text-align: center;
+    }
+
+    .login-heading {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333333;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    .login-form input[type="submit"] {
+      width: 100%;
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .login-form input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .login-options {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .login-options a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .login-options a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+    <div class="login-container">
+      <h2 class="login-sheading">Member Login</h2>
+      <form method="post" action="{% url 'checkadminlogin' %}">
+          {% csrf_token %}
+        <input type="text" name="uname" placeholder="Username" required>
+        <input type="password" name="pwd" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </form>
+      <div class="login-options">
+        <a href="#">Forgot Password?</a> | <a href="{% url 'checkregistration' %}">Create an Account</a>
+      </div>
+    </div>
+  </body>
+</html>

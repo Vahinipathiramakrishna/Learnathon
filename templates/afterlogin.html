@@ -1,0 +1,193 @@
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Agency</title>
+  <link type="text/css" rel="stylesheet" href="{% static 'css/style1.css'  %}" />
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <a href="homepage" >RealEstate</a>
+  </div>
+  <div class="header-right">
+    <a href="{% url 'logout' %}">logout</a>
+    <a href="{% url 'buy' %}">Buy</a>
+    <a href="#">Sell</a>
+    <a href="{% url 'contact' %}">Contact Us</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'agents' %}">Agents</a>
+    <a href="{% url 'checkchangepassword' %}">changepassword</a>
+  </div>
+</header>
+
+<div class="search-bar">
+  <form class="search-form">
+    <select name="place">
+      <option value="">Select Place</option>
+      <option value="">Vijayawada</option>
+      <option value="">Hyderabad</option>
+      <option value="">Banaglore</option>
+      <!-- Add options for places -->
+    </select>
+    <select name="Price">
+      <option value="">Select Price</option>
+      <option value="">1000000</option>
+      <option value="">3000000</option>
+      <option value="">5000000</option>
+      <!-- Add options for places -->
+    </select>
+    <select name="property-type">
+      <option value="">Select Property Type</option>
+      <option value="land">Land</option>
+      <option value="apartment">Apartment</option>
+      <option value="shop">Shop</option>
+      <option value="house">House</option>
+      <option value="hotel">Hotel</option>
+    </select>
+    <select name="bedrooms">
+      <option value="">Select Bedrooms (if applicable)</option>
+      <option value="2">2 BHK</option>
+      <option value="4">4 BHK</option>
+    </select>
+    <button type="submit">Search</button>
+  </form>
+</div>
+
+<div class="additional-sections">
+  <h2>Types of Properties</h2>
+  
+  <div class="options">
+    <!--<div class="section active">
+      <h3>Most Popular places</h3>
+      <!-- Add popular places 
+    </div> -->
+    <div class="section">
+      <h3>By Budget</h3>
+      <button>Within 50 Lakhs</button>
+      <button>Within 90 Lakhs</button>
+      <button>Within 60 Lakhs</button>
+      <button>Within 2 Crores</button>
+    </div>
+    <div class="section">
+      <h3>By Property Type</h3>
+      <button>Land</button>
+      <button>Apartment</button>
+      <button>Shop</button>
+      <button>House</button>
+      <button>Hotel</button>
+    </div>
+    <div class="section">
+      <h3>By BHK</h3>
+      <button>2 BHK</button>
+      <button>4 BHK</button>
+    </div>
+  </div>
+</div>
+
+<div class="featured-properties">
+  <div class="property">
+    <img src="https://www.architectureartdesigns.com/wp-content/uploads/2020/08/P-House-by-Artigas-Arquitectes-in-Barcelona-Spain-1-630x473.jpg" alt="Property 1">
+    <div class="property-info">
+      <h3>Houses</h3>
+      <!--<p>Price: $500,000</p>-->
+      <a href="buy" class="button">click to know more</a>
+      <!--<a href="#" class="button"></a>-->
+    </div>
+  </div>
+  <div class="property">
+    <img src="https://res.cloudinary.com/sentral/image/upload/w_1000,h_1000,q_auto:eco,c_fill/f_auto/v1684782440/miro_hero_building_exterior_2000x1125.jpg" alt="Property 2">
+    <div class="property-info">
+      <h3>Apartments</h3>
+      <a href="buy" class="button">click to know more</a>
+    </div>
+  </div>
+  <div class="property">
+    <img src="https://www.nobroker.in/blog/wp-content/uploads/2023/03/Capital-Gains-on-Sale-of-Agricultural-Land-1-1.jpg" alt="Property 2">
+    <div class="property-info">
+      <h3>Agriculture Lands</h3>
+      <a href="buy" class="button">click to know more</a>
+    </div>
+  </div>
+  <div class="property">
+    <img src="https://www.99acres.com/microsite/articles/files/2023/11/Kalar.jpg" alt="Property 2">
+    <div class="property-info">
+      <h3>Lands</h3>
+      <a href="#" class="button">click to know more</a>
+    </div>
+  </div>
+  <div class="property">
+    <img src="https://www.luxuryvillasstay.com/wp-content/uploads/2023/05/luxury1.jpg" alt="Property 2">
+    <div class="property-info">
+      <h3>Villas</h3>
+      <a href="#" class="button">click to know more</a>
+    </div>
+  </div>
+  <!-- Add more properties as needed -->
+</div>
+
+
+
+
+
+
+<h2 class="new1">Most Viewed Properties</h2>
+
+  <div class="options-container">
+    <div class="option">
+      <img src="https://static.realestateindia.com/rei/mobile-images/property-category/ready-to-move-flats-apartments.png" alt="Ready to Move Flats">
+      <h3>Ready to Move Flats</h3>
+    </div>
+
+    <div class="option">
+      <img src="https://static.realestateindia.com/rei/mobile-images/property-category/ready-to-move-individual-house.png" alt="Ready to Move House & Villas">
+      <h3>Ready to Move House & Villas</h3>
+    </div>
+
+    <div class="option">
+      <img src="https://static.realestateindia.com/rei/mobile-images/property-category/ready-to-move-builder-floor.png" alt="Ready to Move Builder Floors">
+      <h3>Ready to Move Builder Floors</h3>
+    </div>
+
+    <div class="option">
+      <img src="https://static.realestateindia.com/rei/mobile-images/property-category/ready-to-move-farm-house.png" alt="Ready to Move Farm House">
+      <h3>Ready to Move Farm House</h3>
+    </div>
+
+    <div class="option">
+      <img src="https://static.realestateindia.com/rei/mobile-images/property-category/affordable-flats-apartments.png" alt="Affordable Flats">
+      <h3>Affordable Flats</h3>
+    </div>
+
+    <!-- Add more options here -->
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll(".section");
+
+  document.querySelectorAll(".options button").forEach((button, index) => {
+    button.addEventListener("click", () => {
+      sections.forEach((section, i) => {
+        section.classList.toggle("active", index === i);
+      });
+    });
+  });
+});
+</script>
+
+</body>
+</html>

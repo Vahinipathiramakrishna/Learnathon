@@ -1,0 +1,65 @@
+.header
+{
+display: flex;
+ margin-left: 45%;
+ background-color: #333;
+ color: #fff;
+ padding: 10px 20px;
+ display: inline-block; 
+ border-radius: 3rem 3rem;
+}
+
+body{
+    background-image: url(https://www.nichepursuits.com/wp-content/uploads/2021/01/land-business-1200x900.png);
+    background-size:cover;
+}
+
+.table{
+    align-items:self-start;
+    margin-left: 35%;
+    border-radius: 1rem 1rem;
+    margin-top: 2rem;
+    table-layout: auto;
+    width: 30%;
+    border-color:black;
+    border: 2px solid #333; 
+    backdrop-filter: blur(8px); /* Adjust the blur strength as needed */
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the background color and opacity */
+    border-radius: 2rem 2rem;
+    overflow: hidden;
+
+}
+
+tr {
+    text-decoration: solid;
+    font-weight: bolder;
+    box-sizing: 50%;
+    
+}
+
+button{
+    border-radius: 2rem 2rem;
+    background: transparent;
+}
+button:hover {
+   border-radius: 2rem 2rem;
+   background:#333;
+   color: #fff;
+}
+
+input{
+    border-radius: 2rem 2rem;
+    width:5cm;
+    margin-left: 1rem;
+    padding: 3px;
+
+}
+td{
+    border-radius: 2rem 2rem;
+    border: 2px solid #333; /* Set the border width and color for cells */
+    padding: 7px;
+}
+input:hover{
+    background:#333;
+    color: #e4f2a7;
+}

@@ -1,0 +1,97 @@
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .property-container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      padding: 20px;
+    }
+
+    .property-image {
+      margin-left: 40%;
+      width: 250px;
+      height: 250px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .property-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .property-details {
+      margin-left: 20px;
+    }
+
+    .property-details h2 {
+      margin-top: 0;
+    }
+
+    .agent-info {
+      background-color: #f9f9f9;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .agent-info h3 {
+      margin-top: 0;
+    }
+
+    .contact-agent {
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .contact-agent:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="property-container">
+    <div class="property-details">
+      <div class="property-image">
+        <img src="https://saterdesign.com/cdn/shop/articles/bicYNooDCfCQAbvnQ8Xf0FjmW5nfKtOX1669132421_894x.jpg?v=1669242585" alt="Property Image">
+      </div>
+      <h2>3 BHK 1600 Sq.ft. Flat for Sale in Indira Nagar, Bangalore</h2>
+      <p>3 BHK Flat for Sale in Indira Nagar, Bangalore</p>
+      <p>Posted on: 08 Mar, 2024</p>
+      <p>Price: ₹ 3.50 Cr.</p>
+      <p>Built Up Area: 1600 sq.ft</p>
+      <p>Bathroom: 4</p>
+      <p>Balcony: 4</p>
+      <p>Location: Indira Nagar, Bangalore</p>
+      <p>Flats / Apartments is available for sale. This is 3 BHK with Super Area 5000 Sq.ft. Flats / Apartments is located at Indira Nagar, Bangalore at a price of Rs. 3.50 Cr.</p>
+      <div class="agent-info">
+        <h3>Agent Details</h3>
+        <p>Agent: John Doe</p>
+        <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+      </div>
+      <a href="tel:+1234567890" class="contact-agent">Contact Agent</a>
+    </div>
+  </div>
+</body>
+</html>
